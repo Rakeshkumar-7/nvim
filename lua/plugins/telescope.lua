@@ -24,4 +24,14 @@ return {
 			require("telescope").load_extension("ui-select")
 		end,
 	},
+	-- clipboard registry manager
+	{
+		"AckslD/nvim-neoclip.lua",
+		dependencies = {
+			{ "nvim-telescope/telescope.nvim" },
+		},
+		config = function()
+			require("neoclip").setup()
+		end,
+	},
 }
