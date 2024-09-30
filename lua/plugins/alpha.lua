@@ -14,11 +14,11 @@ return {
 			local tableTime = os.date("*t")
 			local hour = tableTime.hour
 			local greetingsTable = {
-				[1] = "🦉  Night owl?",
+				[1] = "🦉  Night owl",
 				[2] = "🌅  Good morning",
 				[3] = "🕛  Good afternoon",
 				[4] = "🌇  Good evening",
-				[5] = "🌃  Night owl?",
+				[5] = "🌃  Night owl",
 			}
 			local greetingIndex = 0
 			if hour == 23 or hour < 7 then
