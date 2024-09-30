@@ -36,10 +36,10 @@ return {
 			local mason_lspconfig = require("mason-lspconfig")
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-			mason_lspconfig.setup({
-				ensure_installed = { "lua_ls", "ts_ls" },
-				automatic_installation = true,
-			})
+      mason_lspconfig.setup({
+        ensure_installed = { "lua_ls", "ts_ls", "pyright" },
+        automatic_installation = true,
+      })
 
 			local on_attach = function(client, bufnr)
 				if client.server_capabilities.documentSymbolProvider then
