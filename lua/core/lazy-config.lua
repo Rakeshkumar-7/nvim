@@ -55,8 +55,8 @@ require("lazy").setup({
 	vim.keymap.set("n", "<leader>tl", toggle_linenumber, { desc = "Toggle relative/absolute line number" }),
 
 	-- Move code around
-	vim.keymap.set({ "n", "v" }, "<A-k>", ":m .-2<CR>==", { desc = "Move line up by 1" }),
-	vim.keymap.set({ "n", "v" }, "<A-j>", ":m .+1<CR>==", { desc = "Move line down by 1" }),
-	vim.keymap.set({ "n", "v" }, "<A-up>", ":m .-2<CR>==", { desc = "Move line up by 1" }),
-	vim.keymap.set({ "n", "v" }, "<A-down>", ":m .+1<CR>==", { desc = "Move line down by 1" }),
+	vim.keymap.set("n", "<M-k>", ":m .-2<CR>==", { desc = "Move line up by 1" }),
+  vim.keymap.set("n", "<M-j>", ":m .+1<CR>==", { desc = "Move line down by 1" }),
+	vim.keymap.set("v", "<M-k>", ":m '<-2<CR>gv=gv", { desc = "Move line up by 1" }),
+  vim.keymap.set("v", "<M-j>", ":m '>+1<CR>gv=gv", { desc = "Move line down by 1" }),
 })
