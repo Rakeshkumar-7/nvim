@@ -5,8 +5,13 @@ return {
 		dependencies = {
 			"nvim-lua/plenary.nvim",
 			"nvim-telescope/telescope-fzf-native.nvim",
+			"andrew-george/telescope-themes",
 		},
 		config = function()
+			local telescope = require("telescope")
+			telescope.load_extension("themes") -- Theme selector via Telescope (telescope-themes)
+
+			-- Keymaps for telescope
 			local builtin = require("telescope.builtin")
 			vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Find in file" })
 			vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Find with live grep" })

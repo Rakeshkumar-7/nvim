@@ -47,6 +47,7 @@ require("lazy").setup({
 		{
 			{ import = "plugins" },
 			{ import = "plugins.coding" },
+			{ import = "plugins.explorer" },
 		},
 	},
 	checker = { enabled = true },

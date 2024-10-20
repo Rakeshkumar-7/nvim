@@ -11,3 +11,4 @@ vim.env.LC_ALL = "en_US.UTF-8"
 vim.env.LC_CTYPE = "en_US.UTF-8"
 
 vim.opt.relativenumber = true
+vim.lsp.set_log_level("debug")
